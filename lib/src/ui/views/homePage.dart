@@ -1674,44 +1674,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                       ),
                                     ],
                                     tabBarView: [
-                                      /////////////////////////////tab1///////////////////////////
-
-                                      _controllers[2].value.isInitialized
-                                          ? GridView.builder(
-                                              padding:
-                                                  const EdgeInsets.all(8.0),
-                                              gridDelegate:
-                                                  SliverGridDelegateWithFixedCrossAxisCount(
-                                                childAspectRatio: 1.6,
-                                                crossAxisCount: 3,
-                                                crossAxisSpacing: 2.0,
-                                                mainAxisSpacing: 2.0,
-                                              ),
-                                              itemCount: videoUrls.length,
-                                              itemBuilder: (context, index) {
-                                                VideoPlayerController
-                                                    controller =
-                                                    _controllers[index];
-                                                return controller
-                                                        .value.isInitialized
-                                                    ? AspectRatio(
-                                                        aspectRatio: controller
-                                                            .value.aspectRatio,
-                                                        child: VideoPlayer(
-                                                            controller),
-                                                      )
-                                                    : Center(
-                                                        child:
-                                                            CircularProgressIndicator());
-                                              },
-                                            )
-                                          : Center(
-                                              child: Text("Comming Soon...",
-                                                  style: TextStyle(
-                                                      fontSize: 20,
-                                                      fontWeight:
-                                                          FontWeight.w600))),
-
                                       //////////////////////////////tab2///////////////////////////
 
                                       GridView.builder(
@@ -1886,6 +1848,43 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ],
                                         ),
                                       ),
+                                      /////////////////////////////tab1///////////////////////////
+
+                                      _controllers[2].value.isInitialized
+                                          ? GridView.builder(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              gridDelegate:
+                                                  SliverGridDelegateWithFixedCrossAxisCount(
+                                                childAspectRatio: 1.6,
+                                                crossAxisCount: 3,
+                                                crossAxisSpacing: 2.0,
+                                                mainAxisSpacing: 2.0,
+                                              ),
+                                              itemCount: videoUrls.length,
+                                              itemBuilder: (context, index) {
+                                                VideoPlayerController
+                                                    controller =
+                                                    _controllers[index];
+                                                return controller
+                                                        .value.isInitialized
+                                                    ? AspectRatio(
+                                                        aspectRatio: controller
+                                                            .value.aspectRatio,
+                                                        child: VideoPlayer(
+                                                            controller),
+                                                      )
+                                                    : Center(
+                                                        child:
+                                                            CircularProgressIndicator());
+                                              },
+                                            )
+                                          : Center(
+                                              child: Text("Comming Soon...",
+                                                  style: TextStyle(
+                                                      fontSize: 20,
+                                                      fontWeight:
+                                                          FontWeight.w600))),
                                     ],
                                   ),
                                 ),

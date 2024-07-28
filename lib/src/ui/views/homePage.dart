@@ -1624,14 +1624,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                               MainAxisAlignment.center,
                                           children: [
                                             SvgPicture.asset(
-                                              "images/portfolioAssets/www.svg",
-                                              width: Get.width / 30,
+                                              "images/portfolioAssets/photo-camera.svg",
                                             ),
                                             Text(
-                                              "Website",
+                                              "Product Photography",
                                               style: TextStyle(
-                                                  // color: UIDataColors.whiteColor,
-                                                  fontSize: Get.width * 0.015),
+                                                // color: UIDataColors.whiteColor,
+                                                fontSize: Get.width * 0.015,
+                                              ),
                                             ),
                                           ],
                                         ),
@@ -1660,14 +1660,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                               MainAxisAlignment.center,
                                           children: [
                                             SvgPicture.asset(
-                                              "images/portfolioAssets/photo-camera.svg",
+                                              "images/portfolioAssets/www.svg",
+                                              width: Get.width / 30,
                                             ),
                                             Text(
-                                              "Product Photography",
+                                              "Website",
                                               style: TextStyle(
-                                                // color: UIDataColors.whiteColor,
-                                                fontSize: Get.width * 0.015,
-                                              ),
+                                                  // color: UIDataColors.whiteColor,
+                                                  fontSize: Get.width * 0.015),
                                             ),
                                           ],
                                         ),

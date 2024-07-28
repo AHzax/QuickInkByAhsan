@@ -1624,14 +1624,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                               MainAxisAlignment.center,
                                           children: [
                                             SvgPicture.asset(
-                                              "images/portfolioAssets/photo-camera.svg",
+                                              "images/portfolioAssets/digital-marketing.svg",
+                                              width: Get.width / 30,
                                             ),
                                             Text(
-                                              "Product Photography",
+                                              "Social Media Marketing",
                                               style: TextStyle(
-                                                // color: UIDataColors.whiteColor,
-                                                fontSize: Get.width * 0.015,
-                                              ),
+                                                  // color: UIDataColors.secondaryOrangeColor,
+                                                  fontSize: Get.width * 0.015),
                                             ),
                                           ],
                                         ),
@@ -1642,14 +1642,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                               MainAxisAlignment.center,
                                           children: [
                                             SvgPicture.asset(
-                                              "images/portfolioAssets/digital-marketing.svg",
-                                              width: Get.width / 30,
+                                              "images/portfolioAssets/photo-camera.svg",
                                             ),
                                             Text(
-                                              "Social Media Marketing",
+                                              "Product Photography",
                                               style: TextStyle(
-                                                  // color: UIDataColors.secondaryOrangeColor,
-                                                  fontSize: Get.width * 0.015),
+                                                // color: UIDataColors.whiteColor,
+                                                fontSize: Get.width * 0.015,
+                                              ),
                                             ),
                                           ],
                                         ),
